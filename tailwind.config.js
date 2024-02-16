@@ -9,7 +9,7 @@ export default {
     extend: {
       animation: {
         'ping-mid': 'spin 3s linear infinite',
-        "flick": "blink 0.2s infinite", 
+        "flick": "blink 10s infinite", 
         "must": "blink 0.2s 3 ", 
         "top": "blink 0.2s 3 ",
         "letters": "blink 0.2s 3 ",

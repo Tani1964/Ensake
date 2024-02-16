@@ -33,7 +33,7 @@ const Showdown = () => {
           />
     
           <img
-            className="animate-flick h-[180%] w-[20%] -translate-y-[20%] -translate-x-2"
+            className="animate-flick h-[180%] w-[20%] -translate-y-[20%] -translate-x-[2.8%]"
             src={Bolt}
             alt=""
           />
