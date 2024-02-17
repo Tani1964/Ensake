@@ -79,7 +79,7 @@ const Wheel = () => {
       >
         <img src={Btn} alt="" />
       </button>
-      {/* {state ? (
+       {state ? (
         <p>
           You choose{" "}
           {Math.trunc(position) == 0
@@ -107,7 +107,7 @@ const Wheel = () => {
             {console.log(Math.trunc(position))}
         </p>
       )}
-      <p>{position}</p> */}
+      <p>{position}</p> 
       <p className="text-[50px] font-semibold">SPIN THE WHEEL...</p>
     </div>
   );
