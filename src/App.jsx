@@ -5,7 +5,7 @@ import Wheel from "./components/Wheel"
 
 const App = () => {
   return (
-    <div className="overflow-x-clip flex flex-col gap-4">
+    <div className="overflow-x-clip flex flex-col gap-32 lg:gap-4">
       <Showdown/>
       <Wheel/>
     </div>

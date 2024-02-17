@@ -22,6 +22,7 @@ const Wheel = () => {
 
       interval = setInterval(() => {
         // Update the position of the wheel
+        // setState(false);
         setPosition(() => (data.position + Math.random())); // Adjust the rotation speed as needed
 
         // Update elapsed time
@@ -30,7 +31,7 @@ const Wheel = () => {
         // Check if the spin duration has elapsed
         if (elapsedTime >= spinDuration) {
           clearInterval(interval); // Stop the spinning animation
-          setClick(false); // Reset the click state
+          // setClick(false); // Reset the click state
           setTimeout(() => {
             setPosition(0);
             setState(true);
@@ -47,10 +48,10 @@ const Wheel = () => {
   const numberOfSections = 3; // Change this according to your wheel setup
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4">
+    <div className="flex flex-col items-center justify-center gap-4 h-screen w-screen">
       <h1 className="text-3xl font-bold">Let&apos;s play...</h1>
       <Stage
-        className=" w-full bg-transparent"
+        className=" w-full bg-transparent max-w-screen-sm"
         options={{ backgroundColor: "white" }}
       >
         <Sprite
@@ -78,33 +79,34 @@ const Wheel = () => {
       >
         <img src={Btn} alt="" />
       </button>
-      {/* {state ? (
+      {state ? (
         <p>
           You choose{" "}
-          {wheelPosition == 0
-            ? "pink"
-            : wheelPosition == 1
+          {Math.trunc(position) == 0
+            ? ""
+            : Math.trunc(position) == 1
             ? "green"
-            : wheelPosition == 2
+            : Math.trunc(position) == 3
             ? "blue"
-            : wheelPosition == 3
+            : Math.trunc(position) == 2
             ? "yellow"
             : null}
         </p>
       ) : (
         <p>
           Wheel is pointing at section:{" "}
-          {wheelPosition == 0
+          {Math.trunc(position) == 0
             ? "pink"
-            : wheelPosition == 1
+            : Math.trunc(position) == 1
             ? "green"
-            : wheelPosition == 2
+            : Math.trunc(position) == 3
             ? "blue"
-            : wheelPosition == 3
+            : Math.trunc(position) == 2
             ? "yellow"
             : null}
+            {console.log(Math.trunc(position))}
         </p>
-      )} */}
+      )}
       <p>{position}</p>
       <p className="text-[50px] font-semibold">SPIN THE WHEEL...</p>
     </div>
