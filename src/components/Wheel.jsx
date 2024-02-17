@@ -108,7 +108,7 @@ const Wheel = () => {
         </p>
       )}
       <p>{position}</p> 
-      <p className="text-[50px] font-semibold">SPIN THE WHEEL...</p>
+      <p className="text-xl lg:text-[50px] font-semibold">SPIN THE WHEEL...</p>
     </div>
   );
 };
