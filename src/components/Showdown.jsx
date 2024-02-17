@@ -61,7 +61,7 @@ const Showdown = () => {
             alt=""
           />
           <img
-            className="animate-[blink_2s_1] -translate-y-[24%] h-40 md:h-80 lg:h-[170%] w-[23%] md:-translate-x-[270%] lg:-translate-x-[210%] -translate-x-[115px] "
+            className="animate-[blink_2s_1]  -translate-x-[105px] -translate-y-[24%] h-40 md:h-80 lg:h-[170%] w-[23%] md:-translate-x-[270%] lg:-translate-x-[210%]  "
             src={O1}
             alt=""
           />
@@ -74,7 +74,7 @@ const Showdown = () => {
 
           <img className="animate-[blink_4s_1] -translate-y-[25%] h-[170%] w-[25%] -translate-x-[293%] " src={W2} alt="" />
 
-          <img className="animate-[blink_4.5s_1] -translate-y-10 md:-translate-y-16 lg:-translate-y-44 h-[170%] w-[25%] -translate-x-[340%] " src={N} alt="" />
+          <img className="animate-[blink_4.5s_1] -translate-y-8 md:-translate-y-16 lg:-translate-y-44 h-[170%] w-[25%] -translate-x-[340%] " src={N} alt="" />
         </div>
         <div className="h-1/5 pt-20 md:pt-4 md:h-1/3 animation-delay-3000 flex justify-center -translate-y-48 animate-must"> <img src={MustDrop} alt="" /></div>
       </div>
