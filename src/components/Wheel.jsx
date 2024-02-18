@@ -31,7 +31,7 @@ const Wheel = () => {
         // Check if the spin duration has elapsed
         if (elapsedTime >= spinDuration) {
           clearInterval(interval); // Stop the spinning animation
-          // setClick(false); // Reset the click state
+          setClick(false); // Reset the click state
           setTimeout(() => {
             setPosition(0);
             setState(true);
