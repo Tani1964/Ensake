@@ -23,7 +23,7 @@ const Wheel = () => {
       interval = setInterval(() => {
         // Update the position of the wheel
         // setState(false);
-        setPosition(() => (data.position + Math.random())); // Adjust the rotation speed as needed
+        setPosition(() => (data.position * finalRotation + Math.random())); // Adjust the rotation speed as needed
 
         // Update elapsed time
         elapsedTime += 15; // Interval is 15 milliseconds (60 frames per second)
